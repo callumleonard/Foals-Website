@@ -1,0 +1,103 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Requirements page</title>
+	<link rel="stylesheet" href="reqStyle.css">
+</head>
+<body>
+<h1>CMP204 Requirements Page - Unit 2 Assessment</h1>
+<p>If you have not met a requirement, do not delete it from the table.</p>
+<table>
+  <thead>
+    <tr>
+      <th class="reqCol">Requirement</th>
+      <th class="metCol">How did you meet this requirement?</th>
+      <th class="fileCol">File name(s), line no.</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>HTML, CSS, JavaScript has been contained within separate files.</td>
+      <td>I met this requirement by creating and then defining external files and then linking them throughout all pages on the website.</td>
+      <td>File: index.php - Line: 12, 113<br />Replicated throughout every page on the website.</td>
+    </tr>
+
+    <tr>
+      <td>A clear use of HTML5.</td>
+      <td>I met this requirement by first using "!DOCTYPE html" at the top of the HTML document defining the document as HTML5. This requirement was also met by semantic tags being used throughout the website(header, main, section, footer etc).</td>
+      <td>File: index.php - Line: 1, 18, 19, 106<br />Replicated throughout every page on the website.</td>
+    </tr>
+    <tr>
+      <td>Use of the Bootstrap framework providing a responsive layout.</td>
+      <td>I met this requirement by using containers and also using rows. Columns were also used throughout the website. Bootstrap classes were used for relevant styling minimising work load in a .css file.</td>
+      <td>File: index.php - Line: 21, 22, 23<br />Replicated throughout every page on the website.</td>
+    </tr>
+    <tr>
+      <td>Use of JavaScript to manipulate the DOM based on an event.</td>
+      <td>I met this requirement by creating a down arrow on click event, that when clicked pushes the page down to a section of importance.</td>
+      <td>File: index.php - Line: 77, 78, 79 - File: down-arrow.js - Line: Every line in file.</td>
+    </tr>
+    <tr>
+      <td>JavaScript loading of dynamically changing information</td>
+      <td>I met this requirement by implementing an album countdown clock on the news page, the clock counts down until the new album is released. I also met this requirement by implementing a bandsintown widget that can dynamically change (shows can be added/removed/altered) based on news from the band. This requirement was also met by implementing a spotify enbed which updates based on new songs released and song popularity of the specified arist.	</td>
+      <td>ALBUM COUNTDOWN: File: news.php - Line: 193 to 221 - File: countdown.js - Line: Every line in file. ||SPOTIFY & BANDSINTOWN: File: index.php - Line 89, Line 100</td>
+    </tr>
+    <tr>
+      <td>Use of jQuery in conjunction with the DOM.</td>
+      <td>I met this requirement by creating buttons that when clicked expand to provide more information, these buttons could also be clicked to hide the information when desired by the user. I met this requirement by implementing a jquery mouseover which changes the background colour of the specified class/tag. When the mouse is moved it reverts the colour back.</td>
+      <td>BUTTONS: File: news.php - Line: 87 to 168 - File: main.js - Line: 31 to 133. || MOUSEOVER COLOUR CHANGE: File: news.php - Line 189. - File: colour.js - Every line in file.</td>
+    </tr>
+    <tr>
+      <td>Use of AJAX (pure JavaScript i.e. without the use of a library).</td>
+      <td>I met this requirement by implementing a button, which when clicked uses ajax to get a file from the web server, updating the content of the webpage without refreshing it.</td>
+      <td>File: news.php - Line: 188 / File fetched "pidge.php" - File: pidge.js - Every line in file.</td>
+    </tr>
+    <tr>
+      <td>Use of the jQuery AJAX function.</td>
+      <td>I met this requirement by using the jquery ajax function which uses a GET request to pull a terms and conditions file from the server and display the contents onto the correct location of the page when a button is clicked.</td>
+      <td>File: dashboard.php - Line: 148 to 151 / File fetched "terms.php" - File: terms.js - Every line in file.</td>
+    </tr>
+    <tr>
+      <td>User login functionality (PHP/MySQL).</td>
+      <td>I met this requirement by implementing a Sign in and Sign out aswell as a signup page (able to be accessed throughout the website). The sign up and login page both linked directly to the MySQL database, implemented form validation, password complexity requirements aswell as prepared statements to prevent SQL injection.</td>
+      <td>LOGIN: File: login.php - Line: 34 to 64 - File: login.inc.php - functions.inc.php - dbh.inc.php || REGISTER: File: register.php - Line: 29 to 102 - File: register.inc.php - functions.inc.php - dbh.inc.php || LOGOUT: File: dashboard.php - Line: 53, 61 - File: logout.php</td>
+    </tr>
+    <tr>
+      <td>Ability to select (SELECT), add (INSERT), edit (UPDATE) and delete (DELETE) information from a database (PHP/MySQL).</td>
+      <td>I met the requirement <strong>(select)</strong> by writing a SQL query which checks whether a userid or useremail currently exists in the db. If it does notify the user that the current credentials exist and return them to the signup page otherwise account is created. I also met the requirement <strong>(select)</strong>by displaying the data automatically stored by the server when the user is logged into dashboard.php. I met this requirement <strong>(insert)</strong> by writing a SQL query that takes user input from all fields in the form and "inserts" it into the appropriate row/columns in the db in the correct order. I met the requirement <strong>(update)</strong> by logging the user into dashboard.php. When the user is logged in they have the opportunity to update their data, form validation is also involved in this making sure certain data is only allowed to be updated based on the input. If successful updated data is reflected in the db and output msg is displayed. I met the requirement <strong>(delete)</strong> by implementing a "dashboard" in the login portal. Clicking "delete my data" triggers a prompt to confirm, if confirmed it removes ALL data for that specified user currently logged in, starts a timeout function and returns them to index.php (they will not be able to log back in using the original credentials).</td>
+      <td>SELECT(multiple selects used throughout): File: functions.inc.php - Line 120 || INSERT: File: functions.inc.php - Line: 151 ||UPDATE: File: dashboard-controller.php - Line: 115 || DELETE: File: delete-handler.php - Line: 7</td>
+    </tr>
+    <tr>
+      <td>Consideration of GDPR and the Cookie Law.</td>
+      <td>I met this requirement by implementing a data storage/consent popup box on the sign up and login pages, which details clear information regarding the privacy policy on the website. If the user wishes to "learn more" it will redirect to the privacy policy page of the website. If the user is not on the sign up page they can easily view the privacy policy located at the bottom of the website in the footer, this footer is replicated throughout the website by including the footer using the php function include_once. The privacy policy itself provides clear cut and easy to understand information that does not confuse nor intimidate the user. The privacy policy follows GDPR compliance. There is also a privacy seal located at the bottom of the privacy page for added user trust. I also met this requirement by implementing a cookie consent different to the other consent on the login and register pages to make the user aware that there were active cookies on the website. I also met this requirement by including comment lines of the media origin of the content used (e.g foals logo, foals video origin) for copyright purposes. This requirement was also met by including alt tags for accessibility.</td>
+      <td>Popup on signup: File: register.php - Line: 19 || Popup on login: File: login.php - Line: 19 || Privacy page footer link(throughout every page(news.php selected): File: news.php - Line: 226 / File linked: footer.php - Line: 7 || Privacy page itself: File: privacy.php - Line: Line 67 to 137 || Index cookie consent: File: index.php - Line: 15, 117 - File: main.js - Line: 138 to 149 || Image comment lines(throughout website dashboard.php selected): File: dashboard.php - Line: 42, 62, 70, 132 || Alt tags(throughout website index.php selected): File: index.php - Line: 25, 36, 45, 47</td>
+    </tr>
+    <tr>
+      <td>SQL queries written as prepared statements.</td>
+      <td>This requirement was met with clear use of prepared statements in the php-includes directory. By using prepared statements SQL injection risk is eliminated as the data and the query are sent to the db separately.</td>
+      <td>Used on multiple pages(functions.inc.php selected): File: functions.inc.php - Line: 154 to 167</td>
+    </tr>
+    <tr>
+      <td>Passwords should be salted and hashed.</td>
+      <td>This requirement was met by using the built-in "password_hash" function which takes the password as a parameter and salts and hashes it. This can be verified by looking at the contents of the "usersPassword" in the db. Password_verify was also used which verifies that the password hash in the db matches the current password entered by the user upon login.</td>
+      <td>Hashing the passwords: File: functions.inc.php - Line: 161 || Password verify: File: functions.inc.php - Line: 196</td>
+    </tr>
+    <tr>
+      <td>User input is sanitised.</td>
+      <td>I met this requirement by implementing a user input sanitation function, which takes all user inputted information as arguments and sanitizes them to ensure there is no possiblity of XSS. This is done for registration, login and updating the records within the application. This is combined well with form validation to ensure the correct characters are being inputted before being submitted to the db.</td>
+      <td>Sanitiation: File: functions.inc.php - Line: 75 to 79 - File: register.inc.php - Line: 63 to 70 - File: login.inc.php  Line: 10, 11 - File: dashboard.controller.php - Line: 9 to 13 || Form validation(used on multiple pages register selected): File: register.php - Line: 67 to 99 - File: register.inc.php - Line: 19 to 61 - File: functions.inc.php (whatever validation function is called by reigster.inc.php)</td>
+    </tr>
+  </tbody>
+
+
+
+</table>
+		
+</body>
+</html>
+
+
+

@@ -1,0 +1,481 @@
+html {
+    height: 100%;
+}
+/* setting body background to black */
+.index-body {
+    background: #000;
+}
+/* shows section css */
+.yellow-head { 
+    text-transform: uppercase;
+    font-size: 5rem;
+    color: #dda11d;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.cookie-consent {
+    color: #dda11d;
+}
+/* setting main div to 100% width and 100 vertical height */
+.main-video{
+    width: 100%    !important;
+    height: 100vh   !important;
+    position: relative;
+}
+/*  sets the video to 100% of the above ^ */
+.foals-vid {
+    width: 100%    !important;
+    height: 100%   !important;
+    position: absolute;
+    object-fit: cover;
+}
+
+/* absoluted it so that it sits ontop of its relative parent */
+.main-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+}
+
+/* setting all fonts to Roboto */
+* {
+    font-family: 'Roboto Condensed',-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+/* inside the .nav-bar element, grab all a tags */
+.nav-bar > .inner-nav > a {
+    color: #fff;
+    font-weight: 600;
+    margin: 0 .2em;
+}
+
+/* sets it to the bottom of main-content */
+/* gave z-index to push to front to enable down-arrow onclick event */
+#down-arrow {
+    position: absolute;
+    left: 49%;
+    transform: translate(-49%);
+    color: white;
+    bottom: 0;  
+    z-index: 999;
+}
+/* on hover, shows the element as clickable */
+#down-arrow:hover{
+    cursor: pointer;
+}
+/* just targets burger "icon" font size */
+#burger {
+    font-size: 1.8rem;
+}
+
+/* on hover, shows the burger "icon" as clickable */
+#burger:hover{
+    cursor: pointer;
+}
+
+/* styling for the inside expandable burger nav */
+#mobile-nav {
+    padding-top: 2.2rem;
+    background-color: black;
+    display: none;
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 90%;
+    z-index: 999;
+}
+
+/* targeting all a tags within the mobile nav and styling them specifically */
+#mobile-nav > a {
+    display: block;
+    text-align: center;
+    padding-top: 0.5rem;
+    color: white;
+    font-size: 1.7rem;
+    font-weight: 480;
+}
+
+/* strectching the horizontal white line seen inside the mobile nav */
+.white-line-top {
+    padding-top: 1px;
+    width: 100%;
+}
+
+/* strectching the horizontal white line seen inside the mobile nav */
+.white-line-bottom {
+    width: 100%;
+    padding-top: 1px;
+}
+
+.privacy-white {
+    color: white;
+}
+
+.sign-in {
+    padding-left:1.2rem
+}
+
+.login-icon {
+    align-items: center;
+    padding-left: 0.2rem;
+    height: 22px;
+}
+/*----------------------------------------- INDEX.php CSS END ------------------------------------------/*
+
+/* ---------------------------------------- NEWS.php CSS START ---------------------------------------*/
+/* making body background color black */
+.news-body {
+    background-color: black;
+}
+
+/* background image positioning */
+.foals-background {
+    z-index: -5;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+/* targeting header and styling it */
+.news > h1 {
+    font-weight: 700;
+    color: white;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+/* styling the entire 1st vinyl row */
+.vinyls-info {
+    overflow: hidden;   
+    justify-content: space-between;
+    
+}
+
+/* styling the entire 2nd vinyl row */
+.vinyls-info2 {
+    overflow: hidden;
+    justify-content: space-between;
+    padding-bottom: 15px;
+}
+
+/* styling the top row vinyl text */
+.vinyls-info h1{
+    color: white;
+    padding-bottom: 9px;
+    font-weight: 700;
+    font-size: 17px;
+}
+
+/* styling the h2 that appears based on the media query */
+#collection h2 {
+    font-weight: 600;
+    color: white;
+    padding-bottom: 7px;
+}
+
+/* decided to give each button its own classname rather than use one classname that they all share, incase I wanted specific buttons to look different */
+.button1 {
+    padding-top: 5px;
+    display: block;
+    padding-bottom: 10px;
+}
+
+.button2 {
+    padding-top: 5px;
+    display: block;
+    padding-bottom: 10px;
+}
+
+.button3 {
+    padding-top: 5px;
+    display: block;
+    padding-bottom: 10px;
+}
+
+.button4 {
+    padding-top: 5px;
+    display: block;
+    padding-bottom: 10px;
+}
+
+.button5 {
+    padding-top: 5px;
+    display: block;
+    padding-bottom: 10px;
+}
+
+.button6 {
+    padding-top: 5px;
+    display: block;
+    padding-bottom: 10px;
+}
+
+.button7 {
+    padding-top: 5px;
+    display: block;
+    padding-bottom: 10px;
+}
+
+.button8 {
+    padding-top: 5px;
+    display: block;
+    padding-bottom: 10px;
+}
+
+/* styling the 2nd row h1s */
+.vinyls-info2 h1{
+    padding-top: 20px;
+    color: white;
+    padding-bottom: 9px;
+    font-weight: 700;
+    font-size: 17px;
+}
+
+/* styling the onclick open and close jquery box */
+.alert-success {
+    background-color: black;
+    color: white;
+    font-weight: 700;
+    border-top: 1px solid #dda11d;
+    border-right: 1px solid #dda11d;
+    border-left: 1px solid #dda11d;
+    border-bottom: 1px solid #dda11d;
+}
+
+/* styling the button */
+.btn-primary {
+    background-color: black;
+    border-top: 1px solid #dda11d;
+    border-right: 1px solid #dda11d;
+    border-left: 1px solid #dda11d;
+    border-bottom: 1px solid #dda11d;
+}
+
+/* footer styling */
+footer {
+    background-color: black;
+    z-index: -999;
+}
+
+/* pushing text content off of background photo */
+.push-down {
+    padding-top: 4rem;
+}
+
+/* album text */
+.album-text {
+    font-size: 4rem;
+    color: #C63939;
+    font-weight: 700;
+}
+
+/* styling line ontop-bottom of pidge */
+.pidge-top{
+    box-shadow: 2px 4px 16px 6px #C9C9C9; 
+    box-shadow: 2px 4px 16px 6px #C9C9C9;
+}
+
+/* positioning of timer */
+.album-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 2rem;
+}
+
+/* positioning of timer */
+.album-countdown {
+    color: #ffffff;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+/* targeting countdown classes */
+.day,.hour,.minute,.second {
+    font-size: 2.7rem;
+    font-weight: bold;
+    color: #C63939;
+}
+
+/* targeting the h3 inside the class */
+.container-days > h3{
+    font-weight: bold;
+}
+
+.container-hours > h3{
+    font-weight: bold;
+}
+
+.container-minutes > h3{
+    font-weight: bold;
+}
+
+.container-seconds > h3{
+    font-weight: bold;
+}
+
+.infamous-pidge {
+    text-transform: uppercase;
+    font-size: 5rem;
+    color: #C63939;
+    font-weight: 700;
+}
+
+#pidge-button {
+    font-weight: bold;
+    color: #dda11d;
+}
+
+#pidgey-colour {
+    font-weight: bold;
+    color: #dda11d;
+}
+#btn-pidge {
+    background-color: black;
+    padding-left: 0.1rem;
+    color: white;
+    border-top: 1px solid #C63939;
+    border-right: 1px solid #C63939;
+    border-left: 1px solid #C63939;
+    border-bottom: 1px solid #C63939;
+}
+
+.pidge-text {
+    padding-top: 1rem;
+}
+
+/* ---------------------------------------- NEWS.php CSS END ---------------------------------------*/
+
+/* ---------------------------------------- PRIVACY.php CSS START ---------------------------------------*/
+/*main text for privacy page*/
+
+.privacy-body {
+    background-color: black;
+}
+.privacy-h3 {
+    text-align: center;
+    border-bottom: 1px solid white;
+}
+
+/* relating to the icons of the privacy page */
+.priv-icons {
+    width: 70%;
+}
+
+/* simple privacy seal width alter */
+.priv-seal {
+    width: 24%;
+}
+/* ---------------------------------------- PRIVACY.php CSS END ---------------------------------------*/
+
+/* ---------------------------------------- LOGIN.php CSS START ---------------------------------------*/
+/* main foals banner on login page */
+
+.login-foals {
+   
+    width: 250px;
+    padding-top: 2.5rem;
+}
+/* ---------------------------------------- LOGIN.php CSS END ---------------------------------------*/
+
+/* ---------------------------------------- Register.php CSS START ---------------------------------------*/
+
+.register-body {
+    background-color: black;
+}
+
+#foals-signin {
+    padding-top: 2rem;
+}
+
+.errormsg {
+    color: #C63939;
+    font-weight: bold;
+}
+/* ---------------------------------------- Register.php CSS END ---------------------------------------*/
+
+/* ---------------------------------------- Dashboard.php CSS START ---------------------------------------*/
+
+.dashboard-body {
+    background-color: black;
+}
+
+.sign-out {
+    padding-left:1.2rem
+}
+
+.data-headers {
+    text-transform: uppercase;
+    font-size: 3rem;
+    color: #dda11d;
+    font-weight: 600;
+}
+
+.box-around {
+    
+    border-top-left-radius: 30% 30%;
+    border-top-right-radius: 30% 30%;
+    border-bottom-right-radius: 30% 30%;
+    border-bottom-left-radius: 30% 30%;
+    
+}
+
+/* targeting error colour */
+.update-error {
+    color: #C63939;
+    font-weight: bold;
+}
+
+/* targeting success colour */
+.update-success {
+    color: green;
+    font-weight: bold;
+}
+/* ---------------------------------------- Dashboard.php CSS END ---------------------------------------*/
+
+/* media queries for personal design preference responsiveness */
+/* only display mobile nav and its attributes when min-width <=481px file global, every page on site. */
+
+@media (min-width:200px)  { .inner-nav {display: none;} }
+@media (min-width:320px)  { .inner-nav {display: none;} }
+@media (min-width:481px)  { .inner-nav {display: none;} }
+@media (min-width:768px)  { .inner-nav {display: block;} }
+@media (min-width:961px)  { .inner-nav {display: block;} }
+@media (min-width:1025px) { .inner-nav {display: block;} }
+@media (min-width:1281px) { .inner-nav {display: block;} }
+
+@media (min-width:200px)  { .inner-nav {display: none;} }
+@media (min-width:320px)  { .inner-nav {display: none;} }
+@media (min-width:481px)  { .inner-nav {display: none;} }
+@media (min-width:768px)  { .inner-nav {display: block;} }
+@media (min-width:961px)  { .inner-nav {display: block;} }
+@media (min-width:1025px) { .inner-nav {display: block;} }
+@media (min-width:1281px) { .inner-nav {display: block;} }
+/* used in news.php for vinyls */
+/* only display this h2 when device screen width is <= 481px in file news.html */
+@media (min-width:200px)  { #collection h2 {display: block;} }
+@media (min-width:320px)  { #collection h2 {display: block;} }
+@media (min-width:481px)  { #collection h2 {display: block;} }
+@media (min-width:768px)  { #collection h2 {display: none;} }
+@media (min-width:961px)  { #collection h2 {display: none;} }
+@media (min-width:1025px) { #collection h2 {display: none;} }
+@media (min-width:1281px) { #collection h2 {display: none;} }
+
+/* when screen size <= 1025px undisplay the background image on news.html */
+@media (min-width:200px)  { .background-remove {display: none;} }
+@media (min-width:320px)  { .background-remove {display: none;} }
+@media (min-width:481px)  { .background-remove {display: none;} }
+@media (min-width:768px)  { .background-remove {display: none;} }
+@media (min-width:961px)  { .background-remove {display: none;} }
+@media (min-width:1025px) { .background-remove {display: none;} }
+@media (min-width:1281px) { .background-remove {display: block;} }
